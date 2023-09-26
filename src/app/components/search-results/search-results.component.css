@@ -1,0 +1,22 @@
+
+.card-result__list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+
+.modal__title {
+}
+
+.modal__list {
+  flex-direction: column;
+}
+.modal__body {
+  width: 400px;
+  height: 490px;
+  margin: 0 0 30px 0;
+}
+
+

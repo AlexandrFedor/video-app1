@@ -1,0 +1,22 @@
+
+<li
+class="card-result__item"
+*ngFor="let movie of movies"
+[id]="movie.imdbID"
+>
+<div class="card-result__card" (click)="modalService.open()">
+  <img
+    [src]="movie.Poster"
+    [alt]="movie.Title"
+    class="card-result__cover"
+  />
+</div>
+<div class="card-result__content">
+  <h1 class="content__title">{{ movie.Title }}</h1>
+  <p class="content__year">Year: {{ movie.Year }}</p>
+  <p class="content__type">Type: {{ movie.Type }}</p>
+</div>
+<app-modal  *ngIf="modalService.isVisible$ | async">
+   </app-modal>
+</li>
+

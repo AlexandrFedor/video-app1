@@ -1,0 +1,30 @@
+.card__container {
+}
+.card__list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+.card__item {
+  display: flex;
+}
+
+.card__body {
+  width: 200px;
+  height: 290px;
+  box-shadow: 0 5px 10px 0px rgba(255, 255, 255, 0.5);
+
+  border-radius: 20px;
+  animation: loading 1s linear infinite alternate;
+}
+
+@keyframes loading {
+  0% {
+    background-color: hsl(0, 0%, 23%);
+  }
+  100% {
+    background-color: hsl(0, 0%, 0%);
+  }
+}

@@ -1,0 +1,24 @@
+.modal__container {
+    position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        background-color: rgb(36, 36, 36, 0.8);
+      transition: all 350ms ease-in;
+    }
+    
+    .modal__content {
+        color: #000;
+        border-radius: 10px;
+    position: absolute;
+    padding: 10px;
+    transform: translateX(-50%);
+    top: 50px;
+    left: 50%;
+      
+    }
+
+    .modal__title {
+     
+    }
